@@ -1,0 +1,13 @@
+.hide{
+    display: none;
+}
+.alert{
+    text-align: center;
+    padding: 20px;
+    width:100%;
+}
+.alert-danger{   
+     background-color: #FF5722;
+    font-size: 2em;
+    font-family: monospace;
+}
