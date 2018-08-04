@@ -1,13 +1,8 @@
 .hide{
     display: none;
-}
-.alert{
-    text-align: center;
-    padding: 20px;
-    width:100%;
-}
-.alert-danger{   
-     background-color: #FF5722;
-    font-size: 2em;
-    font-family: monospace;
+}  
+.btn-trigger{
+     color: #2c7be5;
+    background-color: #d5e5fa;
+    border: 0;
 }

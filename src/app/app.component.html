@@ -1,21 +1,67 @@
-<div class="alert alert-danger hide" id="dvAlertOffline">
-  Check Your Connection.
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white">
+  <div class="container-fluid justify-content-center">
+
+    <a class="navbar-brand h1" href="javascript:void(0)">
+      yadeka
+    </a>
+  </div>
+</nav>
+<div class="main-content h-100">
+  <div class="row h-100">
+    <div class="col-md-6 inner-content border-bottom">
+      <div class="row w-100 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+        <div class="col-md-12 text-center">
+          <div class="alert alert-danger hide" id="dvAlertOffline">
+            Check Your Connection.
+          </div>
+
+          <div class="alert alert-danger hide" id="dvAlertUnauthorized">
+            Your request is unauthorized...
+          </div>
+
+          <div class="alert alert-danger hide" id="dvAlertForbidden">
+            That is Forbidden
+          </div>
+
+          <div class="alert alert-danger hide" id="dvAlertNotFound">
+            That Page doesn't exist.
+          </div>
+
+          <div class="alert alert-danger hide" id="dvAlertAppError">
+            An error occured in the app.
+          </div>
+
+          <div class="alert alert-danger hide" id="dvAlertServerError">
+            A Server Error occured.
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 inner-content">
+      <div class="row w-100 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+        <div class="col-md-12 ml--2 p-3 border-bottom">
+          Click
+          <button (click)="NoInternet()" class="btn btn-trigger">Here</button> To Trigger No internet error (or turn off your network to test)
+        </div>
+        <div class="col-md-12 ml--2 p-3 border-bottom">
+          Click
+          <button (click)="Error401()" class="btn btn-trigger">Here</button> To Trigger Un-authorized error (401)
+        </div>
+        <div class="col-md-12 ml--2 p-3 border-bottom">
+          Click
+          <button (click)="Error401()" class="btn btn-trigger">Here</button> To Trigger Forbidden error (403)
+        </div>
+        <div class="col-md-12 ml--2 p-3 border-bottom">
+          Click
+          <button (click)="Error404()" class="btn btn-trigger">Here</button> To Trigger Page Not Found error (404)
+        </div>
+        <div class="col-md-12 ml--2 p-3 border-bottom">
+          Click
+          <button (click)="Error500()" class="btn btn-trigger">Here</button> To Trigger Server error (500)
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="alert alert-danger hide" id="dvAlertUnauthorized">
-  Your request is unauthorized...
-</div>
-
-<div class="alert alert-danger hide" id="dvAlertForbidden">
- That is Forbidden
-</div>
-
-<div class="alert alert-danger hide" id="dvAlertNotFound">
-  That Page doesn't exist.
-</div>
-
-<div class="alert alert-danger hide" id="dvAlertAppError">
- An error occured in the app.
-</div>
-
-

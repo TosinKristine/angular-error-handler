@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.b--light-gray{
+    border-color: #eeeeee !important;
+}
+.navbar,border-bottom{
+    border-bottom: 1px solid; 
+    border-color: #eeeeee !important;
+}
+.flex-0{
+    flex: 0 !important;
+}
+.inner-content{
+    justify-content: center !important;
+    align-items: center!important;
+    display: flex;
+}
+.inner-content:first-child{
+    border-color: #eeeeee !important;
+    background-color:  #fefefe;
+    border-right:  1px solid;
+}
+.inner-content textarea{
+    min-height: 500px;
+    border: 0;
+    letter-spacing: .1em;
+}
+.bg-from{
+   background-color:  #fefefe;
+}
+.code{
+    font-family:'Courier New', Courier, monospace 
+}
